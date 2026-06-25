@@ -47,13 +47,13 @@ report/
 ---
 ## RUL Prediction
 
-![RUL Prediction](results/RUL Prediction.png)
+![RUL Prediction](results/RULPrediction.png)
 
 ---
 
 ## Device-Level Prediction
 
-![Device Prediction](results/Device level Prediction.png)
+![Device Prediction](results/DevicelevelPrediction.png)
 
 ---
 ---
