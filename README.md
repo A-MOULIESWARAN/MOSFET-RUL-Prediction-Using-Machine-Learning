@@ -31,7 +31,6 @@ Deep learning model for predicting the Remaining Useful Life (RUL) of MOSFET dev
 
 src/
 dataset/
-models/
 results/
 report/
 
