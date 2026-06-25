@@ -188,6 +188,10 @@ history = model.fit(
     ],
     verbose=1
 )
+# Save trained model
+model.save("models/lstm.keras")
+
+print("Model saved successfully!")
 
 # ==========================================================
 # PREDICTION (DEVICE LEVEL)
@@ -241,6 +245,7 @@ plt.plot(history.history['loss'], label='Train')
 plt.plot(history.history['val_loss'], label='Val')
 plt.legend()
 plt.title("Training Loss")
+plt.savefig("results/training_loss.png")
 plt.show()
 
 # RUL curve
@@ -249,6 +254,7 @@ plt.plot(actual[:300]*100, label='Actual')
 plt.plot(pred[:300]*100, label='Predicted')
 plt.legend()
 plt.title("RUL Prediction (Normalized %)")
+plt.savefig("results/rul_prediction.png")
 plt.show()
 
 # Device-level scatter
@@ -257,11 +263,13 @@ plt.scatter(device_actual, device_preds)
 plt.xlabel("Actual Life")
 plt.ylabel("Predicted Life")
 plt.title("Device-Level Prediction")
+plt.savefig("results/device_prediction.png")
 plt.show()
 
 # Error distribution
 plt.figure()
 plt.hist(device_actual - device_preds, bins=20)
 plt.title("Error Distribution")
+plt.savefig("results/error_distribution.png")
 plt.show()
 
