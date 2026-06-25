@@ -45,6 +45,18 @@ report/
 | RMSE | 69.16907077272688 |
 
 ---
+## RUL Prediction
+
+![RUL Prediction](results/RUL Prediction.png)
+
+---
+
+## Device-Level Prediction
+
+![Device Prediction](results/Device level Prediction.png)
+
+---
+---
 
 ## Dataset
 
