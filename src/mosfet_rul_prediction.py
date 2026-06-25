@@ -3,6 +3,8 @@
 # ==========================================================
 import os
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+os.makedirs("models", exist_ok=True)
+os.makedirs("results", exist_ok=True)
 
 # ==========================================================
 # IMPORTS
