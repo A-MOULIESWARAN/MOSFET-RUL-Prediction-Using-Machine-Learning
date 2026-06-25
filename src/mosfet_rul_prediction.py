@@ -9,6 +9,7 @@ os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 # ==========================================================
 import glob
 import numpy as np
+import pandas as pd
 import scipy.io as sio
 import tensorflow as tf
 import matplotlib.pyplot as plt
@@ -235,6 +236,12 @@ print("R2:", r2)
 print("MAE:", mae)
 print("RMSE:", rmse)
 
+metrics = pd.DataFrame({
+    "Metric": ["R2", "MAE", "RMSE"],
+    "Value": [r2, mae, rmse]
+})
+
+metrics.to_csv("results/metrics.csv", index=False)
 # ==========================================================
 # PLOTS
 # ==========================================================
