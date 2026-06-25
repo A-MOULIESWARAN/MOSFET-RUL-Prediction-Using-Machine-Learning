@@ -1,6 +1,3 @@
-# MOSFET-RUL-Prediction-Using-Machine-Learning
-Machine Learning and Deep Learning models for predicting Remaining Useful Life (RUL) of power MOSFETs using NASA PCoE dataset.
-
 # MOSFET Remaining Useful Life Prediction using LSTM
 
 Deep learning model for predicting the Remaining Useful Life (RUL) of MOSFET devices using the NASA Prognostics Center of Excellence (PCoE) thermal overstress dataset.
